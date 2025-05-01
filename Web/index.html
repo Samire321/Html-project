@@ -8,7 +8,7 @@
 <body>
     <p><h1>Book Outlet</h1></p>
     <img src="images/book outlet.png" alt="book outlet">
-    <p><h3> Outlet is a site where you can buy books online from anywhere in the word.<br> 
+    <p><h3>Book Outlet is a site where you can buy books online from anywhere in the word.<br> 
         <br>For those who like to read, scroll down to my website to see what I have for you...</h3></p>
 
         <h4>You can always choose what genre of the book you want to buy...</h4>
@@ -102,6 +102,8 @@
         </ul>
         <hr>
 
+        <hr>
+
         <h2>If you want to buy books, fill out the form below</h2>
         <form action="#" method="post">
 
@@ -138,13 +140,52 @@
         <hr>
 
         <h2>Your book preferences</h2>
-        <form action="#" method="post">
+        <form action="#" method="post">  
 
-            <label for=""></label>
+            <p><strong>How often do you read book?</strong></p>
+                <input type="radio" id="daily" name="option" value="daily">
+                <label for="daily">Daily</label>
+                <input type="radio" id="three times a week" name="option" value="three times a week">
+                <label for="three times a week">Three times a week</label>
+                <input type="radio" id="once a week" name="option" value="once a week">
+                <label for="once a week">Once a week</label>
+                <input type="radio" id="once a month" name="option" value="once a month">
+                <label for="once a month">Once a month</label>
+                <input type="radio" id="rarely" name="option" value="rarely">
+                <label for="rarely">Rarely</label>
 
+            <p><strong>What are your favorite book genres?</strong></p>
+            <input type="checkbox" id="romance" name="option" value="romance">
+            <label for="romance">Romance</label><br> <br>
+            <input type="checkbox" id="science fiction" name="option" value="science fiction">
+            <label for="science fiction">Science Fiction</label><br> <br>
+            <input type="checkbox" id="mystery" name="option" value="mystery">
+            <label for="mystery">Mystery</label><br> <br>
+            <input type="checkbox" id="adventure" name="option" value="adventure">
+            <label for="adventure">Adventure</label><br> <br>
+            <input type="checkbox" id="others" name="option" value="others">
+            <label for="others">Others....</label><br> <br>
+
+            <label><strong>Do you set reading goals?</strong></label>
+            <select id="opt" name="opt">
+                <option value="">--Please choose an option--</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br> <br>
+             
+            <label for="text"><strong>Write your favorite author:</strong></label>
+            <input type="text" id="text" name="text="><br> <br>
+
+            <p><strong>Do you prefer physical books, eBooks, or audiobooks?</strong></p>
+            <input type="radio" id="physical books" name="option" value="physical books">
+            <label for="physical books">Physical books</label><br> <br>
+            <input type="radio" id="eBooks" name="option" value="eBooks">
+            <label for="eBooks">eBooks</label><br> <br>
+            <input type="radio" id="audiobooks" name="option" value="audiobooks">
+            <label for="audiobooks">Audiobooks</label><br> <br>
+
+            <label><strong>Satisfaction:</strong></label>
+            <input type="range" id="stisfaction" name="stisfaction"><br> <br>
         </form>
-        
-
 </body>
-
 </html>
