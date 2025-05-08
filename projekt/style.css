@@ -1,0 +1,13 @@
+div{
+    border: 3px solid black;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: lightblue;
+    background-color: aliceblue;
+    padding: 30px;
+    margin: 20px;
+}
+.form{
+    background-color: rgb(101, 101, 226);
+    text-align: center;
+}
