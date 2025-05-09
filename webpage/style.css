@@ -44,4 +44,39 @@ button{
     width: 1240px;
     font-size: 20px;
 }
-
+.puno{
+    border-color: aliceblue;
+    margin: 20px;
+    background-color:aliceblue;
+    padding:20px ;
+    border-radius: 10px;
+    border-style: calc();
+}
+.vazhdo{
+    border-color: aliceblue;
+    margin: 20px;
+    background-color:aliceblue;
+    padding:20px ;
+    border-radius: 10px;
+    border-style: calc();
+}
+.shum{
+    width: 250px;
+    height: 70px;
+    background-color: yellow;
+    position: relative;
+    border-radius: 10px;
+    padding-top:20px ;
+    padding-bottom: 50px;
+}
+.lim{width: 1190px;
+    height: 15px;
+    background-color: yellow;
+    position: relative;
+    border-radius: 10px;
+    padding-top:7px ;
+    padding-bottom: 25px;
+}
+.pak{
+    text-align: center;
+}
