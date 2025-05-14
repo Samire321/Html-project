@@ -1,0 +1,37 @@
+div{
+    border: 4px solid black;
+    border-color: lightblue;
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+}
+button{
+    background-color:antiquewhite ;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bold;
+    position: fixed;  
+}
+button:hover{
+    background-color: rgb(26, 102, 163);
+}
+button:active{
+    background-color:rgb(12, 94, 12) ;
+    font-size: large;
+}
+.emer{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+p{
+  font-family: Georgia, 'Times New Roman', Times, serif;  
+  font-style: normal;
+  font-weight: bold;
+  text-align: start; 
+}
