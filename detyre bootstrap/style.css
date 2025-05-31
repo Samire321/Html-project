@@ -1,0 +1,26 @@
+body{
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: white;
+}
+.intro img{
+    width: 550px;
+    height: 300px;
+    display: block;
+    border-radius: 30px;
+    padding: 10px ; 
+}
+.product{
+    display: flex;
+    justify-content: center;
+    margin: 0;  
+}
+.product img{
+    text-align: center;
+}
