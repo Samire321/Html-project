@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>KUSHTET NE javascript</h1>
+
+    <h2>if</h2>
+    <p>Shembull: Tregon se je i rritur</p>
+    <script>
+        let mosha= 20;
+        if( mosha>=18){
+            document.write("Je i rritur. <br>");
+        }
+    </script>
+
+    <h2>if...else</h2>
+    <p>Shembull: kontrolloni nese je i rritur apo i mitur</p>
+    <script>
+        let mosha2=16;
+        if(mosha2>=18) {
+            document.write("Je i rritur.<br>");
+        } else {
+            document.write("Je i mitur.<br>");l
+        }
+    </script>
+
+    <h2>if...else if...else</h2>
+    <p>Shembull: Vleresimi i notes</p>
+    <script>
+        let nota=7;
+        if(nota >=9) {
+            document.write("Shkelqyeshem!<br>");
+        } else if (nota>=7) {
+            document.write("Shume mire! <br>");
+        } else{
+            document.write("Duhet te permiresohesh.<br>");  
+        }
+    </script>
+
+    <h2>switch</h2>
+    <p>Shembull: Ditet e javes</p>
+    <script>
+        let dita="e enjte";
+        switch(dita) {
+            case " e hene":
+            document.write("Fillimi i javes.<br>");
+            break;
+            case "e premte":
+                document.write("Gati fundjava!<br>");
+            break;
+            case "e diel": 
+            document.write("Pushimi total.<br>");
+            break;
+            default:
+                document.write("Dite normale.<br>");
+        }
+    </script>
+
+</body>
+</html>

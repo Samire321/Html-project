@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Loops ne JavaScript</H1>
+
+    <h2>for loop</h2>
+    <p>Shembulli: Printoni numrat nga 1 deri ne 5 </p>
+    <script>
+        for( let i=1; i<=5; i++) {
+            document.write("Numri:" + i +" <br>");
+        }
+    </script>
+
+    <h2>for...in loop</h2>
+    <p>Shembull: Kalon neper pronat e nje objekti</p>
+    <script>
+        let personi= {emri: "Samire", mosha: "15", qyteti: "Ferizaj"};
+       for(let key in personi) {
+        document.write(key + ":" + personi[key] +"<br>");
+       }
+    </script>
+
+    <h2>for...of loop</h2>
+    <p>Shembull: Kalon neper elementet e nje array</p>
+    <script>
+        let fruta=["molla", "banane", "portokall"];
+        for(let frut of fruta){
+            document.write("Frut:" + frut+ "<br>");
+        }
+    </script>
+
+    <h2>while loop</h2>
+    <p>Shembull: Printon numrat nga 1 deri ne 3</p>
+    <script>
+        let nr=1;
+        while (nr<=3){
+            document.write("Numer:"+ nr + "<br>");
+            nr++;
+        }
+    </script>
+
+    <h2></h2>
+
+
+</body>
+</html>

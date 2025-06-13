@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operatoret logjik</title>
+</head>
+<body>
+    <h1>Operatoret Logjik ne JavaScript</h1>
+
+    <script>
+        let a=5;
+        let b=8;
+
+        console.log("a=5, b=8");
+
+        //&&- duhet te jene te dyat te verteta
+        console.log("(a>0 && b>0)=", (a>0 && b>0)); //true
+        console.log("(a>0 && b<0)=", (a>0 && b>0)); //false
+
+        // || - mjafton qe njera te jete e vertete
+        console.log("(a>0|| b<5)=", (a>0|| b<5));  //true
+        console.log("(a<0|| b<5)=", (a<0|| b<5));  //false
+
+        // !- mohon vleren
+        console.log("!(a>0)=", !(a>0)); //false
+        console.log("!(b<5)=", !(b<5)); //true
+
+    </script>
+</body>
+</html>
