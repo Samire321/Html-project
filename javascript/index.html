@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shembull JavaScript</title>
+</head>
+<body>
+    <h2>JavaScript ne Html</h2>
+    <p id="demo">Kliko butonin per te ndryshuar tekstin:</p>
+
+    <button onclick="ndryshoTekstin()">Kliko ketu</button>
+
+    <script>
+        function ndryshoTekstin(){
+            document.getElementById("demo").innerHTML="Pershendetje nga JavaScript!"; 
+        }
+    </script>
+
+
+
+
+    <h1>Variablat</h1>
+
+    <script>
+
+     var emri ="Samire";
+     let mosha ="15";
+     const shkolla ="Elena Gjika";
+
+
+     //String
+     let qyteti = "Prishtina";
+     console.log("Qyteti:", qyteti);
+
+     //Number
+     let nota = 5;
+     console.log("Nota:", nota);
+
+     //Boolean
+     let kaKaluar= true;
+     console.log("Ka kaluar?", kaKaluar);
+
+     //Array
+     let notat =[5, 4, 3, 4.5];
+     console.log("Notat:", notat);
+
+     //Object
+     let nxenesi ={
+        emri: "Arta",
+        mosha: 16,
+        klasa: 11
+     }
+     console.log("Nxenesi:", nxenesi);
+
+     //Null
+     let telefoni = null;
+     console.log("Telefoni:", telefoni);
+
+     //Undefined
+     let email;
+     console.log("Emaili:", email);
+
+     console.log("Emri:", emri);
+     console.log("Mosha", mosha);
+     console.log("Shkolla:", shkolla);
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
