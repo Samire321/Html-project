@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Shembuj për Kushtet në JavaScript</title>
+</head>
+<body>
+  <h1>Kushtet në JavaScript</h1>
+
+  <h2>if</h2>
+  <p>Shembull: Tregon nëse je i rritur</p>
+  <script>
+    let mosha = 20;
+    if (mosha >= 18) {
+      document.write("Je i rritur.<br>");
+    }
+  </script>
+
+  <h2>if...else</h2>
+  <p>Shembull: Kontrollon nëse je i rritur apo i mitur</p>
+  <script>
+    let mosha2 = 16;
+    if (mosha2 >= 18) {
+      document.write("Je i rritur.<br>");
+    } else {
+      document.write("Je i mitur.<br>");
+    }
+  </script>
+
+  <h2>if...else if...else</h2>
+  <p>Shembull: Vlerësimi i notës</p>
+  <script>
+    let nota = 7;
+    if (nota >= 9) {
+      document.write("Shkëlqyeshëm!<br>");
+    } else if (nota >= 7) {
+      document.write("Shumë mirë!<br>");
+    } else {
+      document.write("Duhet të përmirësohesh.<br>");
+    }
+  </script>
+
+  <h2>switch</h2>
+  <p>Shembull: Ditët e javës</p>
+  <script>
+    let dita = "e enjte";
+    switch (dita) {
+      case "e hënë":
+        document.write("Fillimi i javës.<br>");
+        break;
+      case "e premte":
+        document.write("Gati fundjava!<br>");
+        break;
+      case "e diel":
+        document.write("Pushim total.<br>");
+        break;
+      default:
+        document.write("Ditë normale.<br>");
+    }
+  </script>
+  
+
+</body>
+</html>

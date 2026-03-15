@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Regjistrimi - Flutura Academy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h2>Regjistrohu ne Flutura Academy</h2>
+
+    <form id="formValidimi" novalidate>
+      <label for="username">Emri i Përdoruesit:</label>
+      <input type="text" id="username" name="username" placeholder="Shkruani emrin" autofocus />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Shkruani email-in" />
+
+      <label for="password">Fjalëkalimi:</label>
+      <input type="password" id="password" name="password" placeholder="Fjalëkalimi (min 6 karaktere)" />
+
+      <label for="confirmPassword">Konfirmo Fjalëkalimin:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Rishkruani fjalëkalimin" />
+
+<button type="button" class="btn btn-primary" onclick="validateForm()">Regjistrohu</button>
+    </form>
+
+    <div id="mesazhi" class="mesazhi"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

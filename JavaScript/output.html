@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Output në JavaScript</title>
+</head>
+<body>
+  <h1>Mënyrat e shkrimit në JavaScript</h1>
+
+  <h2>innerHTML</h2>
+  <p id="demo1">Ky tekst do të ndryshojë.</p>
+  <script>
+    document.getElementById("demo1").innerHTML = "Kjo është e shkruar me innerHTML.";
+  </script>
+
+  <h2>document.write()</h2>
+  <p>Rezultati nga document.write:</p>
+  <script>
+    document.write("Kjo është e shkruar me document.write().<br>");
+  </script>
+
+  <h2>window.alert()</h2>
+  <p>Ky shembull tregon një kuti njoftimi kur faqja hapet.</p>
+  <script>
+    window.alert("Kjo është e shkruar me alert (window.alert()).");
+  </script>
+
+  <h2>console.log()</h2>
+  <p>Hapni konzolën e shfletuesit për të parë mesazhin.</p>
+  <script>
+    console.log("Kjo është e shkruar në konzolë me console.log().");
+  </script>
+
+</body>
+</html>

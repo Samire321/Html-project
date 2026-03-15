@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Eventet në JavaScript</title>
+  <style>
+    .kuti {
+      padding: 20px;
+      background-color: lightgray;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Eventet në JavaScript</h1>
+
+  <div class="kuti">
+    <h2>onclick-Kur klikohet një buton</h2>
+    <button onclick="tregoMesazh()">Kliko këtu</button>
+    <p id="klik"></p>
+  </div>
+
+  <div class="kuti">
+    <h2> onchange- Kur ndryshohet një fushë</h2>
+    <label for="emri">Shkruaj emrin tënd: </label>
+    <input type="text" id="emri" onchange="ndryshoiTeksti()">
+    <p id="ndryshimi"></p>
+  </div>
+
+  <div class="kuti">
+    <h2> onmouseover-Kur kalohet mbi element</h2>
+    <p onmouseover="mbiElement()" id="mousi">Kalo mbi këtë tekst me maus</p>
+  </div>
+
+  <div class="kuti">
+    <h2> onkeydown-Kur shtypet një tast</h2>
+    <input type="text" id="inputKey" onkeydown="shtypTastin(event)">
+    <p id="tasti"></p>
+  </div>
+
+  <div class="kuti">
+    <h2>onload-Kur faqja ngarkohet</h2>
+    <p id="ngarkimi"></p>
+  </div>
+
+  <script>
+    // onclick
+    function tregoMesazh() {
+      document.getElementById("klik").innerHTML = "Butoni u klikua!";
+    }
+
+    // onchange
+    function ndryshoiTeksti() {
+      let emri = document.getElementById("emri").value;
+      document.getElementById("ndryshimi").innerHTML = "Përshëndetje, " + emri + "!";
+    }
+
+    // onmouseover
+    function mbiElement() {
+      document.getElementById("mousi").innerHTML = "Kalove me maus mbi këtë tekst!";
+    }
+
+    // onkeydown
+    function shtypTastin(event) {
+      document.getElementById("tasti").innerHTML = "Shtype tastin: " + event.key;
+    }
+
+    // onload
+    window.onload = function() {
+      document.getElementById("ngarkimi").innerHTML = "Faqja u ngarkua me sukses!";
+    }
+  </script>
+</body>
+</html>

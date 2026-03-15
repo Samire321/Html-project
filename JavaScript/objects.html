@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Objektet në JavaScript</title>
+</head>
+<body>
+  <h1>Objektet në JavaScript</h1>
+
+  <h2>1. Krijimi i një objekti me vetitë</h2>
+  <p id="info1"></p>
+
+  <h2>2. Qasja në vetitë e objektit</h2>
+  <p id="info2"></p>
+
+  <h2>3. Shtimi dhe ndryshimi i vetive</h2>
+  <p id="info3"></p>
+
+  <h2>4. Objekt me funksion brenda (metodë)</h2>
+  <p id="info4"></p>
+
+  <script>
+    // Krijimi i një objekti
+    let nxenesi = {
+      emri: "Diellza",
+      mosha: 16,
+      klasa: "11-A"
+    };
+
+    document.getElementById("info1").innerHTML =
+      "Nxënësja quhet " + nxenesi.emri + ", është " + nxenesi.mosha + " vjeçe dhe është në klasën " + nxenesi.klasa + ".";
+
+    // Qasja në veti
+    let emri = nxenesi.emri;
+    let klasa = nxenesi["klasa"];
+
+    document.getElementById("info2").innerHTML =
+      "Emri: " + emri + "<br>Klasa: " + klasa;
+
+    // Ndryshimi dhe shtimi i vetive
+    nxenesi.mosha = 17;                 // ndryshojmë moshën
+    nxenesi.mbiemri = "Xhuka";       // shtojmë mbiemrin
+
+    document.getElementById("info3").innerHTML =
+      "Mosha e re: " + nxenesi.mosha + "<br>Mbiemri: " + nxenesi.mbiemri;
+
+    //Objekt me metodë (funksion brenda objektit)
+    let makina = {
+      lloji: "BMW",
+      viti: 2020,
+      pershkrim: function() {
+        return "Kjo është një " + this.lloji + " e vitit " + this.viti + ".";
+      }
+    };
+
+    document.getElementById("info4").innerHTML = makina.pershkrim();
+  </script>
+
+</body>
+</html>

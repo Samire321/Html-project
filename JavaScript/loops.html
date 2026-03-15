@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Loops</title>
+</head>
+<body>
+  <h1>Loops në JavaScript</h1>
+
+  <h2>for loop</h2>
+  <p>Shembull: Printon numrat nga 1 deri në 5</p>
+  <script>
+    for (let i = 1; i <= 5; i++) {
+      document.write("Numri: " + i + "<br>");
+    }
+  </script>
+
+  <h2>for...in loop</h2>
+  <p>Shembull: Kalon nëpër pronat e një objekti</p>
+  <script>
+    let personi = {emri: "Diellza", mosha: 50, qyteti: "Ferizaj"};
+    for (let key in personi) {
+      document.write(key + ": " + personi[key] + "<br>");
+    }
+  </script>
+
+  <h2> for...of loop</h2>
+  <p>Shembull: Kalon nëpër elementët e një array</p>
+  <script>
+    let fruta = ["Mollë", "Banane", "Portokall"];
+    for (let frut of fruta) {
+      document.write("Frut: " + frut + "<br>");
+    }
+  </script>
+
+  <h2>while loop</h2>
+  <p>Shembull: Printon numrat nga 1 deri në 3</p>
+  <script>
+    let nr = 1;
+    while (nr <= 3) {
+      document.write("Numër: " + nr + "<br>");
+      nr++;
+    }
+  </script>
+
+  <h2>do...while loop</h2>
+  <p>Shembull: Ekzekutohet të paktën një herë</p>
+  <script>
+    let numer = 1;
+    do {
+      document.write("Vlera: " + numer + "<br>");
+      numer++;
+    } while (numer <= 3);
+  </script>
+
+</body>
+</html>

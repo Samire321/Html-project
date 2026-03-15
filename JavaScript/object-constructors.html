@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <title>Object Constructors në JavaScript</title>
+</head>
+<body>
+  <h1>Shembuj për Object Constructors në JavaScript</h1>
+
+  <script>
+    // Krijimi i një Object Constructor për nxënës
+    function Nxenesi(emri, mosha, drejtimi) {
+      this.emri = emri;
+      this.mosha = mosha;
+      this.drejtimi = drejtimi;
+
+      // Metoda për përshëndetje
+      this.pershendetje = function() {
+        return "Përshëndetje, unë jam " + this.emri + " dhe studioj " + this.drejtimi + ".";
+      }
+    }
+
+    // Krijojmë objekte të reja nga constructor-i
+    let nx1 = new Nxenesi("Diellza", 16, "Inxhinieri Softueri");
+    let nx2 = new Nxenesi("Arta", 17, "Dizajn");
+
+    // Shfaqim vlerat në faqe
+    document.write("<p>" + nx1.pershendetje() + "</p>");
+    document.write("<p>" + nx2.pershendetje() + "</p>");
+
+    // Shfaqim disa vetitë direkt
+    document.write("<p>Emri i nxënësit të parë është: " + nx1.emri + "</p>");
+    document.write("<p>Mosha e nxënësit të dytë është: " + nx2.mosha + "</p>");
+  </script>
+</body>
+</html>

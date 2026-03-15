@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Funksionet në JavaScript</title>
+</head>
+<body>
+  <h1>Shembuj të funksioneve në JavaScript</h1>
+
+  <h2>Funksioni që shfaq një përshëndetje</h2>
+  <button onclick="pershendetje()">Kliko këtu</button>
+
+  <h2>Funksioni që mbledh dy numra</h2>
+  <p id="shuma"></p>
+
+  <h2>Funksioni me parametra</h2>
+  <p id="pershendetjePersonalizuar"></p>
+
+  <h2>Funksioni që kthen një vlerë</h2>
+  <p id="shumeERuajtur"></p>
+
+  <script>
+    // Funksioni i thjeshtë pa parametra
+    function pershendetje() {
+      alert("Përshëndetje nga funksioni!");
+    }
+
+    // Funksioni që llogarit dhe shfaq një shumë
+    function llogaritShumen() {
+      let a = 5;
+      let b = 7;
+      let shuma = a + b;
+      document.getElementById("shuma").innerHTML = "Shuma e 5 dhe 7 është: " + shuma;
+    }
+    llogaritShumen(); // Thirret automatikisht kur faqja hapet
+
+    // Funksioni me parametra
+    function pershendetjeEmri(emri) {
+      document.getElementById("pershendetjePersonalizuar").innerHTML = "Përshëndetje, " + emri + "!";
+    }
+    pershendetjeEmri("Diellza");
+
+    // Funksioni që kthen një vlerë (return)
+    function shume(a, b) {
+      return a + b;
+    }
+
+    let rezultati = shume(4, 6);
+    document.getElementById("shumeERuajtur").innerHTML = "4 + 6 = " + rezultati;
+  </script>
+</body>
+</html>

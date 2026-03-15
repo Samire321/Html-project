@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Metodat e Vargjeve në JavaScript</title>
+</head>
+<body>
+  <h1>Metodat për manipulimin e vargjeve (Strings)</h1>
+  <script>
+    let tekst = " Flutura Academy ";
+
+    document.write("<b>Teksti origjinal:</b> '" + tekst + "'<br><br>");
+
+    // length
+    document.write("Gjatësia: " + tekst.length + "<br>");
+
+    // toUpperCase
+    document.write("Me shkronja të mëdha: " + tekst.toUpperCase() + "<br>");
+
+    // toLowerCase
+    document.write("Me shkronja të vogla: " + tekst.toLowerCase() + "<br>");
+
+    // slice
+    document.write("slice(1, 8): " + tekst.slice(1, 8) + "<br>");
+
+    // substring
+    document.write("substring(1, 8): " + tekst.substring(1, 8) + "<br>");
+
+    // includes
+    document.write("Përmban 'Academy'? " + tekst.includes("Academy") + "<br>");
+
+    // indexOf
+    document.write("Pozita e 'a': " + tekst.indexOf("a") + "<br>");
+
+    // replace
+    document.write("Zëvendëso 'Flutura' me 'Drita': " + tekst.replace("Flutura", "Drita") + "<br>");
+
+    // trim
+    document.write("Pas trim(): '" + tekst.trim() + "'<br>");
+
+    // split
+    let fjale = tekst.trim().split(" ");
+    document.write("Split sipas hapësirës: " + fjale + "<br>");
+  </script>
+</body>
+</html>
